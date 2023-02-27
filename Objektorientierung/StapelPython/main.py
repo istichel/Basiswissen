@@ -1,4 +1,5 @@
 import stapel
+import random
 
 s1 = stapel.Stapel("Erster Stapel")
 s2 = stapel.Stapel("Zweiter Stapel")
@@ -13,10 +14,10 @@ s1.setName("NeuerName")
 print("Der Stapel heißt jetzt: " + s1.getName())
 
 
-for i in Range(10):
+for i in range(10):
     s1.aufStapelLegen(random(100))
 
-for i in Range(5):
+for i in range(5):
     s2.aufStapelLegen(random(10))
 
 s1.printInfo()
