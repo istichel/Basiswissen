@@ -44,7 +44,9 @@ class Warteschlange:
     def nummerZiehen(self):
         print("Methode nummerZiehen wird aufgerufen")
         #lokale Variable Nummer wird angelegt.
-        nummer = len(self.liste)
+        nummer = 0
+        if len(self.liste) > 0 :
+            nummer = self.liste[len(self.liste)-1]+1
         self.liste.append(nummer)
         return nummer
         #die Variable nummer existiert nicht mehr nachdem die Methode nummerZiehen beendet wurde.
